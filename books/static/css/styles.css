@@ -1,6 +1,6 @@
 :root{
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
 }
 *, 
 *::before, 
@@ -9,6 +9,7 @@
 }
 body{
     background-color: #f7f7f7;
+    font-family: helvetica, arial, sans-serif;
 }
 .main{
     /* background-color: white; */
