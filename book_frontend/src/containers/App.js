@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../components/Card'
 
 const API_URL = "http://127.0.0.1:8000/api/"
 export default class App extends Component{
@@ -30,12 +31,23 @@ export default class App extends Component{
             });
         }
     }
-
+    // Pass the data to a child component  
     render(){
         console.log(this.state.data)
+        const {data, loading, error} = this.state
+        if(loading || error){
+            return(
+                <div className="alert">
+                    {loading ? '...Loading': error}
+                </div>
+            ) 
+        }
+
         return(
-            <div>
-                Walapangalaz
+            <div className="feed">
+                {data.map(book =>
+                    <Card key={book.title} data={book}/>    
+                )}
             </div>
         )
     }
