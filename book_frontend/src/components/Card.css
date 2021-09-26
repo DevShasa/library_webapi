@@ -1,0 +1,11 @@
+
+.card ul{
+    list-style: none;
+    padding: 1em;
+    margin: 3em;
+    /* border-radius: 10px; */
+    background: #e0e0e0;
+    box-shadow:  37px 37px 74px #b3b3b3,
+                -37px -37px 74px #ffffff;
+                
+}

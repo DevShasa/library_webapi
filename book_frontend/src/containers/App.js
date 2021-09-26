@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../components/Card'
+import './App.css';
 
 const API_URL = "http://127.0.0.1:8000/api/"
 export default class App extends Component{
